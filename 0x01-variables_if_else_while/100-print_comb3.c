@@ -8,33 +8,22 @@
  */
 
 int main(void)
+
 {
-	int n = '0';
-	int m = '0';
+	int n, m;
 
-	while (n <= '9')
+	for (n = 0; m < 9; n++)
 	{
-		while (m <= '9')
+		for (m = n + 1; m < 10; m++)
 		{
-			if (!(n > m) || n == m)
-			{
-				putchar(n);
-				putchar(m);
-				if (n == '8' && m == '9')
-				{
-					putchar('\n');
-				}
-				else
-				{
-					putchar(',');
-					putchar(' ');
-				}
-			}
-			m++;
+			putchar((n % 10) + '0');
+			putchar((m % 10) + '0');
+			if (n == 8 && m == 9)
+				continue;
+			putchar(',');
+			putchar(' ');
 		}
-		m = '0';
-		n++;
-
 	}
-return (0);
+	putchar('\n');
+	return (0);
 }
