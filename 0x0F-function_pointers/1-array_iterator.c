@@ -11,7 +11,7 @@
 
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	long unsigned int p;
+	unsigned int p;
 
 	if (array && action)
 		for (p = 0; p < size; p++)
