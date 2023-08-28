@@ -20,11 +20,10 @@ int _sqrt_recursion(int n)
 }
 
 /**
- * calculate_sqrt - Helper function to calculate
+ * _sqrt - Helper function to calculate
  * the square root using binary search.
  * @n: The number for which to calculate the square root.
- * @start: The start of the search range.
- * @end: The end of the search range.
+ * @p: The square root of the number.
  *
  * Return: The natural square root of the number.
  */
